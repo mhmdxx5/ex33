@@ -1,0 +1,265 @@
+header,nav,main,section,footer,aside,article,div
+{
+    display: block;
+}
+*{margin: 0;padding: 0;}
+
+/***********************************INDEX.HTML**************************************/
+a{
+    text-decoration:none;
+}
+ul a:hover{
+    background-color: red;
+}
+/***********************************WRAPPER**************************************/
+#wrapper
+{
+width:1000px;
+margin: 0px auto;
+display: flex;
+flex-wrap: wrap;
+}
+
+/***********************************BODY,MAIN,HEADER,ASIDE,FOOTER**************************************/
+body
+{
+    background: url(../images/bodyB.jpg);
+    background-size: 30px;
+}
+
+header
+{
+    
+    width: 1000px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+header a
+{
+    width: 60px;
+    height: 60px;
+    margin-top: 18px;
+    background:url(../images/Ellipse.png)no-repeat left;
+
+}
+
+main
+{
+    position: relative;
+    width:810px;
+    height: 830px;
+    
+}
+nav
+{
+    width: 185px;
+    height: 830px;
+    margin-left: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+footer
+{
+    
+    width: 100%;
+    height: 70px;
+    background-color: black;
+   
+}
+.Box1
+{
+    width: 180px;
+    height: 300px;
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 90px;
+}
+.Box2
+{
+    position: absolute;
+    width:410px;
+    height: 285px;
+    background-color: black;
+    top: 20px;
+    right: 50px;
+
+}
+.Box3
+{
+    position: absolute;
+    width: 180px;
+    height: 300px;
+    background-color: black;
+    top: 450px;
+    left: 280px;
+}
+ul
+{
+margin:0px auto;
+}
+
+ul li
+{
+    margin-top: 30px;
+}
+ul a
+{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+#hover1
+{
+    color: black;
+}
+/***********************************LAYOUT1.HTML**************************************/
+#wrapper2
+{
+    width:1000px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+#layout1N
+{
+    width: 1000px;
+    height: 180px;
+    background: url(../images/layout_2.jpg);
+}
+#layout1N ul
+{
+    display: flex;
+    align-items: center;
+}
+#layout1N ul li
+{
+    margin-left: 30px;
+}
+
+#layout1M 
+{
+    
+width: 810px;
+height: 650px;
+position: relative;
+}
+#layout1M .Box1
+{
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    background-color: black;
+    top: 65px;
+    right: 85px;
+    margin: 0px;
+    
+}
+#layout1M .Box2
+{
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    background-color: black;
+    top: 65px;
+    right: 250px;
+}
+#layout1M .Box3
+{
+    position: absolute;
+    width: 412px;
+    height: 288px;
+    top:235px;
+    left:342px;
+    
+    
+    background-color: black;
+}
+#layout1M .Box4
+{
+    position: absolute;
+    width: 269px;
+    height: 111px;
+    left: 56px;
+    top:413px;
+    background-color: black;
+    
+}
+#footer1
+{
+    position: fixed;
+    bottom: 0px;
+}
+
+
+/**************************LAYOUT2*********************/
+
+#layout2N
+{
+    width:1000px;
+    height: 160px;
+    margin: 0px auto;
+    background: url(../images/layout_3.jpg);
+}
+#layout2N ul
+{
+    display: flex;
+    align-items: center;
+}
+#layout2N ul li
+{
+    margin-left: 30px;
+}
+#main_layout2{
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+article{
+    width: 200px;;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 100px;
+   background-color: white;
+   
+}
+#layout2N section
+{
+    position: absolute;
+    left: 140px;
+    top:150px;
+}
+
+@media (max-width:600px){
+    #wrapper2{
+        margin: 0px auto;
+        width: 600px;
+    }
+    main,header,footer{
+
+        width: 600px;
+    }
+    
+    #layout2N section{
+        left: 35px;
+        top:50px
+    }
+    
+    #hamb{
+        background: url(../images/unnamed.png) no-repeat;
+        width:50px;
+        height: 50px;
+        position: absolute;
+        right: 0px;
+        top: 110px;
+    }
+    
+
+}
